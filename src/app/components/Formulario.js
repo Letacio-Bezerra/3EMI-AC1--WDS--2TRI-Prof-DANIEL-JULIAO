@@ -13,6 +13,7 @@ export default function Formulario() {
             alert('Preencha todos os campos')
             return
         }
+
         if (estrela > 5 || estrela < 1) {
             alert('Sua avaliação deve ser entre 1 e 5 estrelas')
             return
@@ -31,7 +32,7 @@ export default function Formulario() {
     }
 
     return (
-        <div className={styles.form}>
+        <form className={styles.form}>
             <h2>Avaliação de produto, serviço ou experiência</h2>
 
             <label>O que você irá avaliar</label>
@@ -52,6 +53,6 @@ export default function Formulario() {
 
             <button onClick={handleSubmit}>Enviar Avaliação</button>
 
-        </div>
+        </form>
     )
 }
